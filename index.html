@@ -160,11 +160,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                6
+                5
                 <span>文章</span>
             </div>
             <div class="article-info-block">
-                6
+                2
                 <span>标签</span>
             </div>
         </div>
@@ -257,7 +257,7 @@
 
 </div>
 
-    <a data-url="http://scamaq.com/2018/05/24/笔记2_博客主题修改/" data-id="cjikayq1z0005ggtlk99pup8a" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://scamaq.com/2018/05/24/笔记2_博客主题修改/" data-id="cjikd59uk0004twtl53t2r79w" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -385,7 +385,7 @@
 
 </div>
 
-    <a data-url="http://scamaq.com/2018/05/24/笔记1_搭建个人博客框架/" data-id="cjikayq1y0004ggtlwek7nxqx" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://scamaq.com/2018/05/24/笔记1_搭建个人博客框架/" data-id="cjikd59ui0003twtllmotgisl" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -506,7 +506,7 @@
 
 </div>
 
-    <a data-url="http://scamaq.com/2018/05/24/笔记3_hexo+github使个人博客可以远程访问/" data-id="cjikayq33000iggtljqtauslb" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://scamaq.com/2018/05/24/笔记3_hexo+github使个人博客可以远程访问/" data-id="cjikd59w40008twtln4jcyxa7" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -634,7 +634,7 @@
 
 </div>
 
-    <a data-url="http://scamaq.com/2018/05/23/hello-world/" data-id="cjikayq1r0001ggtlwe277hyr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://scamaq.com/2018/05/23/hello-world/" data-id="cjikd59ud0001twtl4tv3w4zh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -780,103 +780,7 @@ do{
 
 </div>
 
-    <a data-url="http://scamaq.com/2018/05/22/生成随机验证码/" data-id="cjikayq1w0003ggtlifqwqbnu" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-markdown语法" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><p>markdown语法<br></p>
-            <p class="article-more-link">
-                <a href="/2018/05/22/markdown语法/#more">查看更多</a>
-            </p>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://scamaq.com/2018/05/22/markdown语法/" data-id="cjikayq1l0000ggtl56adsmqz" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://scamaq.com/2018/05/22/生成随机验证码/" data-id="cjikd59u70000twtl9t4h00ut" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1068,7 +972,7 @@ do{
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">6</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">5</span></li></ul>
         </div>
     </div>
 
@@ -1077,7 +981,7 @@ do{
     <div class="widget-wrap">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/all/">all</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/呵呵/">呵呵</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技术/">技术</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/验证码/">验证码</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/all/">all</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/验证码/">验证码</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1086,7 +990,7 @@ do{
     <div class="widget-wrap">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/all/" style="font-size: 20px;">all</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/呵呵/" style="font-size: 10px;">呵呵</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/教程/" style="font-size: 10px;">教程</a> <a href="/tags/验证码/" style="font-size: 10px;">验证码</a>
+            <a href="/tags/all/" style="font-size: 10px;">all</a> <a href="/tags/验证码/" style="font-size: 10px;">验证码</a>
         </div>
     </div>
 
