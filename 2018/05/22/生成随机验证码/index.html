@@ -3,20 +3,20 @@
 <head>
     <meta charset="utf-8">
     
-    <title>这是一篇新文章 | 阿门阿前</title>
+    <title>String.fromCharCode()//unico转string | 阿门阿前</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="asdfada阿萨德啊阿萨德">
-<meta name="keywords" content="阿门阿前，科技，博客">
+    <meta name="description" content="&quot;use strict&quot;;   var a=[];   var b=[];   var ub=&apos;a&apos;.charCodeAt().toString()//得到字母a的unico码   var uc=&apos;z&apos;.charCodeAt().toString()//得到字母z的unico码   var un=ub   for (let i = 0;i">
+<meta name="keywords" content="验证码">
 <meta property="og:type" content="article">
-<meta property="og:title" content="这是一篇新文章">
-<meta property="og:url" content="http://scamaq.com/2018/05/24/这是一篇新文章/index.html">
+<meta property="og:title" content="String.fromCharCode()&#x2F;&#x2F;unico转string">
+<meta property="og:url" content="http://scamaq.com/2018/05/22/生成随机验证码/index.html">
 <meta property="og:site_name" content="阿门阿前">
-<meta property="og:description" content="asdfada阿萨德啊阿萨德">
+<meta property="og:description" content="&quot;use strict&quot;;   var a=[];   var b=[];   var ub=&apos;a&apos;.charCodeAt().toString()//得到字母a的unico码   var uc=&apos;z&apos;.charCodeAt().toString()//得到字母z的unico码   var un=ub   for (let i = 0;i">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-24T08:40:49.937Z">
+<meta property="og:updated_time" content="2018-06-18T13:20:53.213Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="这是一篇新文章">
-<meta name="twitter:description" content="asdfada阿萨德啊阿萨德">
+<meta name="twitter:title" content="String.fromCharCode()&#x2F;&#x2F;unico转string">
+<meta name="twitter:description" content="&quot;use strict&quot;;   var a=[];   var b=[];   var ub=&apos;a&apos;.charCodeAt().toString()//得到字母a的unico码   var uc=&apos;z&apos;.charCodeAt().toString()//得到字母z的unico码   var un=ub   for (let i = 0;i">
     
 
     
@@ -161,11 +161,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                7
+                6
                 <span>文章</span>
             </div>
             <div class="article-info-block">
-                5
+                6
                 <span>标签</span>
             </div>
         </div>
@@ -213,7 +213,7 @@
 </aside>
 
             
-            <section id="main"><article id="post-这是一篇新文章" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-生成随机验证码" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -221,7 +221,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            这是一篇新文章
+            String.fromCharCode()//unico转string
         </h1>
     
 
@@ -230,14 +230,19 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/05/24/这是一篇新文章/">
-            <time datetime="2018-05-24T08:40:04.000Z" itemprop="datePublished">2018-05-24</time>
+        <a href="/2018/05/22/生成随机验证码/">
+            <time datetime="2018-05-22T03:09:51.000Z" itemprop="datePublished">2018-05-22</time>
         </a>
     </div>
 
 
                         
                         
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/验证码/">验证码</a>
+    </div>
+
                     </div>
                 
             </header>
@@ -246,8 +251,29 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>asdfada阿萨德啊阿萨德</p>
-
+            <script type="text/javascript">
+ "use strict";
+  var a=[];
+  var b=[];
+  var ub='a'.charCodeAt().toString()//得到字母a的unico码
+  var uc='z'.charCodeAt().toString()//得到字母z的unico码
+  var un=ub
+  for (let i = 0;i<=uc-ub ; i++) {
+    a[i]=String.fromCharCode(un);//得到a-z
+    b[i]=a[i].toUpperCase();//得到A-Z
+    un++;
+  }
+    a.push(0,1,2,3,4,5,6,7,8,9)//得到包含a-z及0-9的数组a
+    a=a.concat(b);//得到a-z、0-9、A-Z
+do{
+    var std='';
+    for (let i = 0; i < 4; i++) {
+        std+=a[Math.floor(Math.random()*a.length)]//生成随机验证码
+    }
+    var str=prompt(std).toUpperCase();//用户输入转为大写
+    std=std.toUpperCase();//生成的随机验证码转为大写
+}while(str!=std);
+// </script>
         
         </div>
         <footer class="article-footer">
@@ -257,7 +283,7 @@
 
 </div>
 
-    <a data-url="http://scamaq.com/2018/05/24/这是一篇新文章/" data-id="cjhphbjmx00063gtlk6v8spqz" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://scamaq.com/2018/05/22/生成随机验证码/" data-id="cjikayq1w0003ggtlifqwqbnu" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -332,19 +358,19 @@
         
 <nav id="article-nav">
     
-        <a href="/2018/05/24/笔记1_搭建个人博客框架/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2018/05/23/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
             <strong class="article-nav-caption">上一篇</strong>
             <div class="article-nav-title">
                 
-                    笔记1_搭建个人博客框架
+                    Hello World
                 
             </div>
         </a>
     
     
-        <a href="/2018/05/24/笔记3_hexo+github使个人博客可以远程访问 - 副本/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/05/22/markdown语法/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">下一篇</strong>
-            <div class="article-nav-title">笔记4_使个人博客可以远程访问</div>
+            <div class="article-nav-title"></div>
         </a>
     
 </nav>
@@ -413,44 +439,6 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/05/24/这是一篇新文章/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/24/这是一篇新文章/" class="title">这是一篇新文章</a></p>
-                            <p class="item-date"><time datetime="2018-05-24T08:40:04.000Z" itemprop="datePublished">2018-05-24</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/05/24/笔记3_hexo+github使个人博客可以远程访问 - 副本/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/05/24/笔记3_hexo+github使个人博客可以远程访问 - 副本/" class="title">笔记4_使个人博客可以远程访问</a></p>
-                            <p class="item-date"><time datetime="2018-05-24T03:11:11.000Z" itemprop="datePublished">2018-05-24</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
                             <a href="/2018/05/24/笔记3_hexo+github使个人博客可以远程访问/" class="thumbnail">
     
     
@@ -467,6 +455,44 @@
                         </div>
                     </li>
                 
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/23/hello-world/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/05/23/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2018-05-23T15:09:41.913Z" itemprop="datePublished">2018-05-23</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/22/生成随机验证码/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/05/22/生成随机验证码/" class="title">String.fromCharCode()//unico转string</a></p>
+                            <p class="item-date"><time datetime="2018-05-22T03:09:51.000Z" itemprop="datePublished">2018-05-22</time></p>
+                        </div>
+                    </li>
+                
             </ul>
         </div>
     </div>
@@ -478,7 +504,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">7</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">6</span></li></ul>
         </div>
     </div>
 
@@ -487,7 +513,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/all/">all</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/呵呵/">呵呵</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技术/">技术</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/all/">all</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/呵呵/">呵呵</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技术/">技术</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/教程/">教程</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/验证码/">验证码</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -496,7 +522,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/all/" style="font-size: 20px;">all</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/呵呵/" style="font-size: 10px;">呵呵</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/教程/" style="font-size: 10px;">教程</a>
+            <a href="/tags/all/" style="font-size: 20px;">all</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/呵呵/" style="font-size: 10px;">呵呵</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/教程/" style="font-size: 10px;">教程</a> <a href="/tags/验证码/" style="font-size: 10px;">验证码</a>
         </div>
     </div>
 
